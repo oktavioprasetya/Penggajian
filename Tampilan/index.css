@@ -1,0 +1,76 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 230, 210);
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    font-family: Arial;
+}
+#form{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 90px;
+    border-radius: 3rem;
+}
+.isibaris1{
+    display: flex;
+    gap: 20px;
+}
+.isi{
+    gap: 20px;
+}
+h3{
+    color: rgb(5, 54, 38);
+}
+#nama{
+    width: 98.7%;
+}
+#jabatan{
+    width: 100%;
+}
+input,select{
+    border-radius: 5px;
+    border: solid 1px #05340d;
+    padding: 3px;
+}
+#kirim{
+    border-radius: 0.6rem;
+    color: #ffffff;
+    background-color: #05340d;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+#kirim:hover{
+       color: #180404;
+    background-color: #53c065;
+}
+label{
+    color: #696666;
+}
+#masa_kerja{
+    width: 120px;
+}
+#jam_lembur{
+    width: 120px;
+}
+#nilai_kerja{
+    width: 120px;
+}
+#jumlah_hari_terlambat{
+    width: 120px;
+}
+#opsi{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #05340d;
+}
+button{
+    width: 60px;
+}

@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Form penggajian</title>
 </head>
-<body>
-    <form action="/api/detail.php" method="POST" >
-          <input type="text" id="nama">
-          <input type="text" id="jabatan">
-          <input type="text" id="masa_kerja">
-          <input type="text" id="jam_lembur">
-          <input type="text" id="jumlah_hari_terlambat">
-          <input type="text" id="nilai_kerja">
 
-          <button type="submit">KIRIM</button>
+<body>
+    <form action="/api/detail.php" method="POST" id="form">
+        <h3>DATA KARYAWAN</h3><br>
+        <div class="isi1">
+            <div class="isi">
+                <label for="nama">Nama Karyawan</label><br>
+                <input type="text" id="nama"><br><br>
+            </div>
+            <div class="isi">
+                <label for="jabatan">Jabatan</label><br>
+                <select id="opsi">
+                    <optgroup>
+                      <option value="supervisor">Supervisor</option>
+                      <option value="staff">Staf</option>
+                      <option value="manager">Manager</option>
+                    </optgroup>
+                </select><br><br>
+            </div>
+
+        </div>
+        <h3>DATA OPERASIONAL & KINERJA</h3><br>
+        <div class="isibaris1">
+
+            <div class="isi">
+                <label for="masa_kerja">Masa Kerja</label><br>
+                <input type="number" id="masa_kerja" max="100" min="1"><button>Tahun</button><br><br>
+            </div>
+            <div class="isi">
+                <label for="jumlah_hari_terlambat">Jumlah Keterlambatan</label><br>
+                <input type="text" id="jumlah_hari_terlambat" min="0"><button>Hari</button><br><br>
+            </div>
+
+
+        </div>
+        <div class="isibaris1">
+            <div class="isi">
+                <label for="jam_lembur">Jam lembur</label><br>
+                <input type="text" id="jam_lembur" min="0"><button>Jam</button><br><br>
+            </div>
+            <div class="isi">
+                <label for="nilai_kerja">Nilai Kinerja</label><br>
+                <input type="text" id="nilai_kerja" min="0" max="100"><Button>/100</Button><br><br><br>
+            </div>
+
+        </div>
+
+
+        <button type="submit" id="kirim">Hitung Gaji</button>
     </form>
 </body>
+
 </html>
